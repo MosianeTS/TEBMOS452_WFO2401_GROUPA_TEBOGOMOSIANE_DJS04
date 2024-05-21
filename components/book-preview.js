@@ -5,12 +5,17 @@ class BookPreview extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 .preview {
+                    border-width: 0;
+                    width: 95%;
+                    font-family: Roboto, sans-serif;
+                    padding: 0.5rem 1rem;
                     display: flex;
                     align-items: center;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    margin: 10px;
                     cursor: pointer;
+                    text-align: left;
+                    border-radius: 8px;
+                    border: 1px solid rgba(var(--color-dark), 0.15);
+                    background: rgba(var(--color-light), 1);
                 }
                 .preview__image {
                     width: 50px;

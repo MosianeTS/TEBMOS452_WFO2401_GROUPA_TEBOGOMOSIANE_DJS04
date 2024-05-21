@@ -201,13 +201,13 @@ function handleSearchFormSubmit(event) {
  */
 function handleShowMoreButtonClick() {
     const fragment = document.createDocumentFragment();
-    // Append the next set of books to the fragment
+   
     appendBooksToFragment(matches, fragment, page * BOOKS_PER_PAGE, (page + 1) * BOOKS_PER_PAGE);
-    // Append the fragment to the DOM
+    
     document.querySelector('[data-list-items]').appendChild(fragment);
-    // Increment the page counter
+    
     page += 1;
-    // Update the state of the "Show More" button
+    
     updateShowMoreButton();
 }
 
